@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="Gospodarstwo rolne michał kotla" content="Gospodarstwo rolne Michał Kotla">
+    <meta name="description" content="Super gospodarstwo rolne w zgłobniu u michala kotli.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Gospodarstwo Rolne Kotla</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--<header>
+   <nav class="navbar" id="navbar">
+       <ul>
+           <li><a class="active" href="#home">Start</a></li>
+           <div class="hamburger" id="hamburger">
+               <li><a href="#about">O nas</a></li>
+               <li><a href="#portfolio">Oferta</a></li>
+               <li><a href="#contacts">Kontakt</a></li>
+           </div>
+       </ul>
+   </nav>
+</header>
+-->
+<section class="container" id="home">
+    <div class="homeTitle">
+        <h1 id="homeTitle">Gospodarstwo Rolne</h1>
+        <hr>
+        <h1 id="homeTitle2">Michał Kotla</h1>
+    </div>
+    <div class="homeNav" id="homeNav">
+        <a href="#about">O nas</a>
+        <a href="#portfolio" >Nasze usługi</a>
+        <a href="#contacts">Kontakt</a>
+    </div>
+</section>
+
+<section class="container" id="about">
+    <div class="aboutContainer">
+        <div class="aboutImage">
+        </div>
+        <div class="aboutContent">
+            <h1>O nas</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur eos error ex nam praesentium repudiandae saepe unde vero? Cumque doloremque facere illo nostrum obcaecati quae similique temporibus. Ipsam, odio.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="container" id="portfolio">
+    <div class="portfolioContainer">
+        <div class="contentPortfolio">
+            <h1>Nasze usługi</h1>
+        </div>
+        <div class="firstCard card">
+            <h3>Kompleksowe Odśnieżanie</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam beatae corporis deserunt excepturi expedita illum inventore ipsa, ipsum laboriosam maiores minima nam pariatur p</p>
+            <button class="open-window"><span data-modal-target="#modal">Pokaż szczegóły</span></button>
+        </div>
+        <div class="secondCard card">
+            <h3>Koszenie traw</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quaerat tempora? Aliquam consequuntur, cum delectus doloremque explicabo inventore labore libero quae tenetur! Commodi eum ex illo nesciunt officia quo rerum.</p>
+            <button  class="open-window"><span data-modal-target="#modal">Pokaż szczegóły</span></button>
+        </div>
+        <div class="thirdCard card">
+            <h3>Koszenie i młócenie</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, deserunt, sunt! Blanditiis eos, eveniet. Adipisci alias aspernatur, at beatae ea ex expedita harum, ipsum magni molestiae mollitia pariatur possimus sit.</p>
+            <button class="open-window"><span data-modal-target="#modal">Pokaż szczegóły</span></button>
+        </div>
+        <div class="fourthCard card">
+            <h3>Kompleksowe usługi koparką</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid architecto beatae deleniti earum eveniet harum ipsum, labore laboriosam laudantium, modi nemo nobis numquam perferendis, quod reiciendis reprehenderit sint sunt.</p>
+            <button class="open-window"><span data-modal-target="#modal">Pokaż szczegóły</span></button>
+        </div>
+    </div>
+</section>
+
+
+<!-- modal section -->
+<div class="modal window" id="modal">
+    <div class="modal-header">
+        <div class="title">Flashcards</div>
+        <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+        Tak jest  że Kamil Ficekjest hardkrem <br><br>
+        I did this project when I was studying frontend on Hyperskill. I created a web page with flip-down flash cards, learned some HTML basics and learned that CSS can easily make a beautiful design.
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d320.50286100684!2d21.850938625774518!3d50.01092621554234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDAwJzM5LjIiTiAyMcKwNTEnMDMuNSJF!5e0!3m2!1spl!2spl!4v1636500712263!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    </div>
+</div>
+
+
+<section class="contact" id="contacts">
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v10.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+         attribution="setup_tool"
+         page_id="1012913998734388"
+         theme_color="#0A7CFF"
+         logged_in_greeting="Cześć, w czym mogę Ci pomóc? "
+         logged_out_greeting="Cześć, w czym mogę Ci pomóc? "
+         greeting_dialog_display="hide"
+         greeting_dialog_delay=5>
+
+    </div>
+
+    <div class="content">
+        <h1>Kontakt</h1>
+    </div>
+    <div class="containerInfo">
+        <div class="contactInfo">
+           <div class="box">
+               <a target="_blank" href="https://goo.gl/maps/xd7ELurCb8gUbdt47"> <div class="icon"><i class="fas fa-map-marked-alt"></i></div></a>
+                   <a target="_blank" href="https://goo.gl/maps/xd7ELurCb8gUbdt47"> <div class="text">
+                    <h2>Adres</h2>
+                    <p>Zgłobień 485</p>
+                    <p>36-046 Zgłobień</p>
+                </div>
+                   </a>
+            </div>
+            <div class="box">
+                <a href="tel:+48123456789"><div class="icon"><i class="fas fa-phone"></i></div></a>
+                <a href="tel:+48123456789"><div class="text">
+                    <h2>Telefon</h2>
+                    <p>123-456-789</p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="mailto:hege@example.com"><div class="icon"><i class="fas fa-envelope"></i></div></a>
+                <a href="mailto:hege@example.com"><div class="text">
+                    <h2><a href="mailto:hege@example.com">Email</a></h2>
+                    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="contactForm">
+            <form method="post">
+                <h2>Wyślij wiadomość</h2>
+                <div class="inputBox">
+                    <input type="text" name="subject" required="required">
+                    <span>Imię i Nazwisko</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="email" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea required="required" name="comment"></textarea>
+                    <span>Napisz wiadomość</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" name="" value="Wyślij">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    Copywright by Kamil, 2021
+</footer>
+<div id="overlay">
+</div>
+<script defer src="script.js"></script>
+
+</body>
+
+</html>

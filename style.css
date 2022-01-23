@@ -1,0 +1,870 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body{
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-top: solid black 1px;
+}
+/*home*/
+#home {
+    color: white;
+    background-image: url('Photo/landscape-2211587.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    font-size: 45px;
+    position: relative;
+    background-size: cover;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#homeTitle  {
+    margin: 40% 0 10px 0;
+    animation-name: example;
+    animation-duration: 3s;
+    position: relative;
+}
+#homeTitle2 {
+    margin: 0 0 100px 0;
+    animation-name: example;
+    animation-duration: 3s;
+    position: relative;
+}
+@keyframes example {
+    from {
+        opacity: 0;
+    } to {
+          opacity: 1;
+      }
+}
+/*.homeTitle span {
+    opacity: 0;
+    transition: all 0.4 ease;
+}
+.homeTitle span.fade {
+    opacity: 1;
+}
+*/
+.homeNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    animation-duration: 3s;
+    animation-name: example;
+
+}
+
+.homeNav a {
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    margin: 16px;
+    border-color: white;
+    border-radius: 1000px;
+    border-style: solid;
+    font-size: 35px;
+    /*transition: 5s;*/
+}
+.homeNav a:hover{
+    background: linear-gradient(#f3b307, transparent);
+}
+/* ABOUT */
+.aboutContainer {
+    background-image: url("Photo/agriculture-1845835.jpg");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+}
+.aboutContainer h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 65px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.aboutContainer p {
+    padding: 25px;
+    font-size: 25px;
+}
+
+.aboutContainer .aboutImage {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    border-right: black solid 1px;
+    background-position: right;
+}
+
+.aboutContainer .aboutContent {
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    height: 100%;
+}
+
+
+
+/* PORTFOLIO */
+
+.portfolioContainer {
+    background-image: url("Photo/pexels-freestocksorg-175389 (2).jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.portfolioContainer .contentPortfolio {
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    width: 50%;
+
+}
+.portfolioContainer .contentPortfolio h1{
+    font-weight: bold;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.card {
+    border-radius: 30px;
+    margin: 100px 10px 0 10px;
+    width: 25%;
+    height: 85%;
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));*/
+    color: white;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+}
+.card h3 {
+    font-size: 40px;
+}
+.card p {
+    padding: 20px;
+    font-size: 25px;
+
+}
+.card:hover {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));*/
+    width: 35%;
+    height: 90%;
+}
+
+.open-window {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    flex-grow: 1;
+    background-color: transparent;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 54px;
+    border: none;
+    flex-direction: column;
+
+}
+.open-window span {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    border: 1px solid white;
+    padding: 17px;
+    border-radius: 30px;
+}
+
+.open-window span:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, #15089D, #FF6C47);
+}
+
+
+/* KONTAKT */
+
+iframe {
+    max-width: 100%;
+    max-height: 100%;
+    flex-grow: 1;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.contact {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 50px 100px;
+    background: url("Photo/pexels-quang-nguyen-vinh-2165688.jpg") no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h1 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.containerInfo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background: linear-gradient(45deg, rgba(3, 3, 3, 0.5), transparent);
+}
+
+.containerInfo .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.containerInfo .contactInfo .box {
+    padding: 20px 0;
+    display: flex;
+    position: relative;
+}
+.containerInfo .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.containerInfo .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 23px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+    text-decoration: none;
+}
+.containerInfo .contactInfo .box .text h2 {
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    display: flex;
+
+}
+.containerInfo .contactInfo .box .text a {
+    text-decoration: none;
+    color:white
+}
+.containerInfo .contactInfo .box .text p {
+    display: flex;
+    margin: 2px 0 0 3px;
+}
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: white;
+}
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+    opacity: 1;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+footer {
+    height: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+/*
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    list-style: none;
+    background: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.3;
+    z-index: 15;
+}
+
+.navbar a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.3;
+}
+
+.navbar a {
+    float: left;
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 25px;
+    opacity: 1;
+}
+
+.navbar a:hover {
+    background: #1565C0;
+}
+*/
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 50%;
+    height: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+button {
+    font-family: arial;
+}
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 18px;
+    font-size: 20px;
+    height: 66%;
+}
+
+/* overplay which display when pop-up window occurs*/
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+@media (max-width: 1650px) and (min-width: 1025px) {
+    #homeTitle{margin: 30% 0 10px 0;font-size: 52px;}
+    #homeTitle2{font-size: 53px;margin: 0;}
+    .homeNav a {font-size: 25px;padding: 22px;margin: 10px;}
+    .aboutContainer h1 {font-size: 50px;}
+    .aboutContainer p {font-size: 18px;}
+    .card p {padding: 13px;font-size: 18px;}
+    .open-window {font-size: 16px;}
+    .card h3 {font-size: 30px;}
+    .portfolioContainer .contentPortfolio h1 {font-size: 33px;}
+    .text {font-size: 90%}
+    .contact .content h1 {font-size: 43px;margin-bottom: 25px;}
+    .containerInfo .contactInfo .box .text h2 {font-size: 26px;}
+    .containerInfo .contactInfo .box .text {font-size: 19px;}
+    .contactForm h2 {font-size: 26px;}
+    .contactForm .inputBox span {font-size: 15px;}
+    .contactForm .inputBox input[type="submit"] {font-size: 16px;padding: 9px;}
+    iframe {max-height: 80%;}
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+    hr {border: none; font-size: 20px;}
+    #homeTitle {margin: 10% 0 0 0;font-size: 40px;}
+    #homeTitle2 {margin: 0;font-size: 42px; }
+    .homeNav a {padding: 17px;margin: 6px;font-size: 20px;border: 2px white solid;}
+    #about {height: 120%;}
+    .aboutContainer h1 {margin-top: 40px;font-size: 50px;}
+    .aboutContainer p {font-size: 22px;}
+    #portfolio {height: 500%;}
+    .portfolioContainer {flex-direction: column;}
+    .portfolioContainer .card {width: 100%; margin:auto;}
+    .portfolioContainer .contentPortfolio {position: relative;}
+    .card{border-radius: 0;}
+    .card h3 {background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));    font-size: 27px;}
+    .card p {font-size: 18px;}
+    .aboutContainer .aboutContent {width: 100%}
+    .aboutContainer .aboutImage {width: 0; height: 0}
+    .contact .content h1 {
+        font-size: 27px;
+        margin: 10px;
+    }
+.containerInfo {
+    flex-direction: column;
+    margin: 0;
+}
+    .contact {
+        padding: 10px;
+        height: 200%
+    }
+
+    .containerInfo {
+        flex-direction: column;
+    }
+
+    .containerInfo .contactInfo {
+        margin-bottom: 10px;
+    }
+
+    .containerInfo .contactInfo, .contactForm {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .containerInfo .contactInfo .box {
+        padding: 10px 5px;
+    }
+
+    .containerInfo .contactInfo .box .text h2 {
+        font-size: 15px;
+    }
+
+    .containerInfo .contactInfo .box .text p {
+        font-size: 15px;
+    }
+
+    .contactForm h2 {
+        font-size: 18px;
+    }
+
+    .contactForm .inputBox {
+        margin: 0
+    }
+
+    .contactForm .inputBox input, .contactForm .inputBox textarea {
+        font-size: 12px;
+    }
+
+    .contactForm .inputBox span {
+        font-size: 11px;
+        padding: 0 5px;
+    }
+
+    .contactForm .inputBox input[type="submit"] {
+        width: 150px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .contactForm .inputBox input:focus ~ span,
+    .contactForm .inputBox input:valid ~ span,
+    .contactForm .inputBox textarea:focus ~ span,
+    .contactForm .inputBox textarea:valid ~ span {
+        font-size: 10px;
+        transform: translateY(-10px);
+    }
+
+    footer {
+        height: 13px;
+        font-size: 10px;
+    }
+    .modal{width: 80%; max-width: 100%;}
+    .modal-body{font-size: 14px;}
+    .modal-header .title {font-size: 23px;}
+    iframe {max-height: 60%;}
+    .open-window span {padding:16px; font-size: 18px;}
+    .portfolioContainer .contentPortfolio h1 {
+        font-size: 25px;
+        margin: 10px 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+        border-radius: 0;
+        padding: 20px;
+    }
+    .contact.content h1 {font-size: 37px;}
+}
+
+
+@media (min-width: 1025px)  {
+    .aboutContainer .aboutImage {
+        background-image: url("Photo/pexels-jannis-knorr-2933243.jpg");
+    }
+
+    .firstCard {
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(Photo/58519.jpg);
+        /*background-image: url("Photo/58519.jpg");*/
+        background-size: inherit;
+        margin-left: 30px;
+    }
+    .firstCard:hover{background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Photo/58519.jpg");background-size: inherit;}
+    .secondCard {
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("Photo/pexels-sergio-souza-5047616.jpg");
+        background-size: inherit ;
+    }
+
+    .secondCard:hover{background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Photo/pexels-sergio-souza-5047616.jpg");background-size: inherit;}
+
+          .thirdCard {
+              background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("Photo/pexels-markus-spiske-110643.jpg");
+              background-size: inherit;
+          }
+    .thirdCard:hover{background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Photo/pexels-markus-spiske-110643.jpg");background-size: inherit;}
+    .fourthCard {
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("Photo/pexels-tobias-bjørkli-2058738 (1).jpg") no-repeat;
+        background-size: inherit;
+        margin-right: 30px;
+    }
+    .fourthCard:hover{background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Photo/pexels-tobias-bjørkli-2058738 (1).jpg");background-size: inherit;}
+
+}
+
+@media (max-width: 1024px) and (orientation: portrait)  {
+    section {
+        border: none
+    }
+
+    hr {
+        font-size: 18px;
+        border: none;
+    }
+
+    .portfolioContainer .contentPortfolio h1 {
+        font-size: 25px;
+        margin: 10px 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+        border-radius: 0;
+        padding: 20px;
+    }
+
+    #homeTitle {
+        font-size: 30px;
+        margin: 50% 0 0 0;
+    }
+
+    #homeTitle2 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .homeNav a {
+        padding: 17px;
+        margin: 5px;
+        font-size: 17px;
+        border: 1px solid;
+    }
+
+    .contact {
+        padding: 10px;
+        height: 100%
+    }
+
+    .containerInfo {
+        flex-direction: column;
+    }
+
+    .containerInfo .contactInfo {
+        margin-bottom: 10px;
+    }
+
+    .containerInfo .contactInfo, .contactForm {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    #portfolio {
+        height: 300%;
+    }
+
+    .portfolioContainer {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .portfolioContainer .card {
+        width: 100%;
+        margin: auto;
+        border-radius: 0;
+    }
+
+    .portfolioContainer .contentPortfolio {
+        position: relative;
+        width: 100%;
+    }
+
+    .card h3 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+        font-size: 19px;
+    }
+
+    .aboutContainer .aboutContent {
+        width: 100%
+    }
+
+    .aboutContainer {
+        flex-direction: column
+    }
+
+    .aboutContainer .aboutImage {
+        width: 0;
+        height: 0
+    }
+
+    .aboutContainer p {
+        font-size: 13px;
+    }
+
+    .aboutContainer h1 {
+        font-size: 33px;
+        margin-top: 24px;
+    }
+
+    .portfolioContainer p {
+        margin-bottom: 10px;
+        font-size: 14px
+    }
+
+    .modal.active {
+        width: 100%;
+        height: 60%;
+    }
+
+    .open-window {
+        font-size: 12px;
+        padding: 16px;
+    }
+
+    .modal-header .title {
+        font-size: 22px;
+    }
+
+    .modal-body {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .contact .content h1 {
+        font-size: 27px;
+        margin: 10px;
+    }
+
+    .containerInfo .contactInfo .box {
+        padding: 10px 5px;
+    }
+
+    .containerInfo .contactInfo .box .text h2 {
+        font-size: 15px;
+    }
+
+    .containerInfo .contactInfo .box .text p {
+        font-size: 15px;
+    }
+
+    .contactForm h2 {
+        font-size: 18px;
+    }
+
+    .contactForm .inputBox {
+        margin: 0
+    }
+
+    .contactForm .inputBox input, .contactForm .inputBox textarea {
+        font-size: 12px;
+    }
+
+    .contactForm .inputBox span {
+        font-size: 11px;
+        padding: 0 5px;
+    }
+
+    .contactForm .inputBox input[type="submit"] {
+        width: 150px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .contactForm .inputBox input:focus ~ span,
+    .contactForm .inputBox input:valid ~ span,
+    .contactForm .inputBox textarea:focus ~ span,
+    .contactForm .inputBox textarea:valid ~ span {
+        font-size: 10px;
+        transform: translateY(-10px);
+    }
+
+    footer {
+        height: 13px;
+        font-size: 10px;
+    }
+}
+    @media (max-width: 1024px) and (orientation: portrait),
+    (max-width: 1024px) and (orientation: landscape) {
+        .firstCard {
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(Photo/58519.jpg);
+            /*background-image: url("Photo/58519.jpg");*/
+            background-size: inherit;
+
+        }
+
+        .firstCard:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Photo/58519.jpg");
+            background-size: inherit;
+        }
+
+        .secondCard {
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("Photo/pexels-sergio-souza-5047616small.jpg");
+            background-size: inherit;
+        }
+
+        .secondCard:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Photo/pexels-sergio-souza-5047616small.jpg");
+            background-size: inherit;
+        }
+
+        .thirdCard {
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("Photo/pexels-markus-spiske-110643.jpg");
+            background-size: inherit;
+        }
+
+        .thirdCard:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Photo/pexels-markus-spiske-110643.jpg");
+            background-size: inherit;
+        }
+
+        .fourthCard {
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("Photo/pexels-tobias-bjørklismallsmall.jpg") no-repeat;
+            background-size: inherit;
+
+        }
+
+        .fourthCard:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Photo/pexels-tobias-bjørklismallsmall.jpg");
+            background-size: inherit;
+        }
+
+
+    }
+
+
